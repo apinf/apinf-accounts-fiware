@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'tunguska:accounts-imgur',
+  name: 'apinf:accounts-fiware',
   version: '0.0.1',
-  summary: 'OAuth2 for Imgur',
-  git: 'https://github.com/robfallows/tunguska-accounts-imgur',
+  summary: 'OAuth2 for Fiware',
+  git: 'https://github.com/apinf/apinf-accounts-fiware',
   documentation: 'README.md'
 });
 
@@ -15,9 +15,9 @@ Package.onUse(function(api) {
   api.imply('accounts-base', ['client', 'server']);
 
   api.use('accounts-oauth', ['client', 'server']);
-  api.use('tunguska:imgur@0.0.1', ['client', 'server']);
+  api.use('apinf:fiware@0.0.1', ['client', 'server']);
 
-  api.addFiles('accounts-imgur_login_button.css', 'client');
+  api.addFiles('accounts-fiware_login_button.css', 'client');
 
-  api.addFiles('accounts-imgur.js');
+  api.addFiles('accounts-fiware.js');
 });
