@@ -1,7 +1,7 @@
 Package.describe({
   name: 'apinf:accounts-fiware',
   version: '0.0.1',
-  summary: 'OAuth2 for Fiware',
+  summary: 'OAuth2 for Fiware IDM',
   git: 'https://github.com/apinf/apinf-accounts-fiware',
   documentation: 'README.md'
 });
