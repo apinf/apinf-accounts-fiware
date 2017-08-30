@@ -1,6 +1,6 @@
 Package.describe({
   name: 'apinf:accounts-fiware',
-  version: '0.0.1',
+  version: '0.1.0',
   summary: 'OAuth2 for Fiware IDM',
   git: 'https://github.com/apinf/apinf-accounts-fiware',
   documentation: 'README.md'
@@ -15,7 +15,7 @@ Package.onUse(function(api) {
   api.imply('accounts-base', ['client', 'server']);
 
   api.use('accounts-oauth', ['client', 'server']);
-  api.use('apinf:fiware@0.0.1', ['client', 'server']);
+  api.use('apinf:fiware@0.1.0', ['client', 'server']);
 
   api.addFiles('accounts-fiware_login_button.css', 'client');
 
