@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/apinf/apinf-accounts-fiware.svg?branch=master)](https://travis-ci.org/apinf/apinf-accounts-fiware)
 [![Code Climate](https://codeclimate.com/github/apinf/apinf-accounts-fiware/badges/gpa.svg)](https://codeclimate.com/github/apinf/apinf-accounts-fiware)
 [![Issue Count](https://codeclimate.com/github/apinf/apinf-accounts-fiware/badges/issue_count.svg)](https://codeclimate.com/github/apinf/apinf-accounts-fiware)
 
