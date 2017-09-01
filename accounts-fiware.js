@@ -34,19 +34,19 @@ if (Meteor.isClient) {
   Accounts.addAutopublishFields({
     forLoggedInUser: _.map(
       /**
-       * Logged in user gets whitelisted fields + accessToken + expiresAt.
+       * Logged in user gets allowed fields + accessToken + expiresAt.
        */
-      Fiware.whitelistedFields.concat(['accessToken', 'expiresAt']), // don't publish refresh token
+      Fiware.allowedFields.concat(['accessToken', 'expiresAt']), // don't publish refresh token
       function(subfield) {
         return 'services.fiware.' + subfield;
       }),
 
     forOtherUsers: _.map(
       /**
-       * Other users get whitelisted fields without emails, because even with
+       * Other users get allowed fields without emails, because even with
        * autopublish, no legitimate web app should be publishing all users' emails.
        */
-      _.without(Fiware.whitelistedFields, 'email', 'verified_email'),
+      _.without(Fiware.allowedFields, 'email', 'verified_email'),
       function(subfield) {
         return 'services.fiware.' + subfield;
       })
