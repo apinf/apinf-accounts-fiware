@@ -21,3 +21,22 @@ Package.onUse(function(api) {
 
   api.addFiles('accounts-fiware.js');
 });
+
+Package.onTest(function(api) {
+  api.versionsFrom('1.2.1');
+  api.use('ecmascript');
+  api.use(['underscore', 'random']);
+  api.use('accounts-base', ['client', 'server']);
+  api.use('practicalmeteor:mocha');
+
+  // Export Accounts (etc) to packages using this one.
+  api.imply('accounts-base', ['client', 'server']);
+
+  api.use('accounts-oauth', ['client', 'server']);
+  // api.use('apinf:fiware@0.1.0', ['client', 'server']);
+
+  api.addFiles('accounts-fiware_login_button.css', 'client');
+
+  // api.addFiles('accounts-fiware.js');
+  api.addFiles('tests/accounts-fiware.test.js', ['server', 'client'])
+});

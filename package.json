@@ -1,0 +1,9 @@
+{
+  "name": "apinf-accounts-fiware",
+  "version": "0.1.0",
+  "description": "oAuth accounts package to integrate FIWARE oAuth Service to APinf platform",
+  "author": "APinf.io",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {}
+}
